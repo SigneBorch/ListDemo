@@ -11,14 +11,14 @@ import java.util.Scanner;
 public class ListRace {
 
     public static void main(String[] args) throws FileNotFoundException {
-        //Test med List - prøv at skifte ArrayList ud med en LinkedList for at se forskel i performance
+        //Afprøvning af List-implementationer - prøv at skifte ArrayList ud med en LinkedList for at se forskel i performance!
         List<String> list = new ArrayList<>();
         ListRace listRace = new ListRace(list);
         listRace.fillList();
         listRace.removeFirst();
     }
 
-    private List list;
+    private List<String> list;
 
     public ListRace(List<String> list) {
         this.list = list;
